@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_primary"
+    tools:context=".ResultadoSorteioFragment">
+
+    <TextView
+        android:id="@+id/tvInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado_do_sorteio"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.RobotoFlex.LabelMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/primeiro_resultado"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.RobotoMono.Overline"
+        android:textColor="@color/content_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoTitle" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowResultNumbersHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInfoContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
