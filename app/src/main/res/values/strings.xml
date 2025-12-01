@@ -19,5 +19,8 @@
     <string name="ate">ATÉ</string>
     <string name="nao_repetir_numero">Não repetir número</string>
     <string name="resultado_do_sorteio">RESULTADO DO SORTEIO</string>
-    <string name="primeiro_resultado">1º RESULTADO</string>
+    <string name="numero_do_sorteio">%1$sº RESULTADO</string>
+    <string name="sortear_novamente">SORTEAR NOVAMENTE</string>
+    <string name="limite_final_pre_definido">100</string>
+    <string name="_1_resultado">1º RESULTADO</string>
 </resources>

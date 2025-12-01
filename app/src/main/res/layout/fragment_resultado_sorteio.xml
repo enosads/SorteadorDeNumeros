@@ -19,24 +19,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfoContent"
+        android:id="@+id/tvDrawNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/primeiro_resultado"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.RobotoMono.Overline"
         android:textColor="@color/content_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfoTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoTitle"
+        tools:text="@string/_1_resultado" />
 
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flowResultNumbersHelper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        app:flow_horizontalGap="16dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvInfoContent" />
+        app:layout_constraintTop_toBottomOf="@id/tvDrawNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvInfoContent"
+        android:id="@+id/tvDrawNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/defina_o_intervalo_e_a_quantidade_conteudo"
@@ -36,7 +36,7 @@
         android:weightSum="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfoContent">
+        app:layout_constraintTop_toBottomOf="@+id/tvDrawNumber">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
                 android:maxLines="1"
                 android:text="@string/numeros"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelMedium"
+                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelSmall"
                 android:textColor="@color/content_secondary" />
 
             <Space
@@ -59,6 +59,7 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etAmountNumbers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
@@ -88,7 +89,7 @@
                 android:maxLines="1"
                 android:text="@string/de"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelMedium"
+                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelSmall"
                 android:textColor="@color/content_secondary" />
 
             <Space
@@ -96,6 +97,7 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etInitialLimit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
@@ -125,7 +127,7 @@
                 android:maxLines="1"
                 android:text="@string/ate"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelMedium"
+                android:textAppearance="@style/TextAppearance.RobotoFlex.LabelSmall"
                 android:textColor="@color/content_secondary" />
 
             <Space
@@ -133,12 +135,13 @@
                 android:layout_height="8dp" />
 
             <EditText
+                android:id="@+id/etFinalLimit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
                 android:inputType="number"
                 android:padding="16dp"
-                android:text="@string/limite_inicial_pre_definido"
+                android:text="@string/limite_final_pre_definido"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.Sora.DisplaySmall"
                 android:textColor="@android:color/white" />
